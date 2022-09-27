@@ -7,7 +7,7 @@
     $correo=$_POST['correo'];
     $contraseña=$_POST['contraseña'];
 
-    $req(strlen($correo), strlen($contraseña));
+    $req(strlen($correo)* strlen($contraseña));
 
     mysqli_query($link, "INSERT INTO USUARIO VALUES ('', '$correo', '$contraseña', 'Activo', 1)") or die ("<h2>Error 3</h2>");
 

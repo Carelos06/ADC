@@ -45,11 +45,11 @@
     <div id="div1">
    
    
-        <form action="post">
+    <form action="conexion.php" method="post">
         
         Tipo de documento:
 
-        <select name="tipo de documento" id="select">
+        <select name="tipo de documento" id="select" name="TD">
             <option value="cedula" >Cedula</option>
             <option value="targeta de identidad">Targeta de identidad</option>
             <option value="cedula extrangera">Cedula extrangera</option>
@@ -60,41 +60,41 @@
 
      <div>
         No. Documento:
-       <input type="text"required maxlength="10">
+       <input type="text"required maxlength="10" name="NoDocumento">
      </div> 
 
      <div id="espacio55">
 
      Nombre:
-     <input type="text" required>
+     <input type="text" required name="nombre">
 
      <div id="espacio55"></div>
 
      Apellido:
-     <input type="text" required>
+     <input type="text" required name="apellido">
 
      <div id="espacio55"></div>
 
      Direccion:
-     <input type="text" required>
+     <input type="text" required name="dirección">
 
      <div id="espacio55"></div>
 
      Telefono:
-     <input type="tel" required>
+     <input type="tel" required name="telefono">
 
      <div id="espacio55"></div>
 
      Correo:
-     <input type="email" required>
+     <input type="email" required name="correo">
 
      <div id="espacio55"></div>
 
      Contraseña:
-     <input type="text" required>
+     <input type="text" required name="contraseña">
      <div id="espacio55">
      Usuario:
-     <input type="text" required>
+     <input type="text" required name="usuario">
 
      <div id="espacio55"></div>
     

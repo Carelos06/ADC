@@ -9,5 +9,10 @@
 
     $req(strlen($correo), strlen($contraseña));
 
-    mysqli_query($link, "insert into USUARIO values (null, $correo, $contraseña, 'Activo', 1)") or die ("<h2>Error 3</h2>");
+    mysqli_query($link, "INSERT INTO USUARIO values (null, $correo, $contraseña, 'Activo', 1)") or die ("<h2>Error 3</h2>");
+
+echo'
+<h2>hecho</h2>
+';
+
 ?>

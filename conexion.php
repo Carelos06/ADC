@@ -14,7 +14,7 @@
     $contraseña=$_POST['contraseña'];
 
     mysqli_query($link,"INSERT INTO USUARIO VALUES (null, '$correo', '$contraseña', 'Activo', 1)");
-    mysqli_query($link, "INSERT INTO CLIENTE VALUES (null, '$NDocumento', '$TDocumento', '$nombre', '$apellido', '$direccion', '$telefono', 'Activo', 1)") or die ("<h2>Error 3</h2>");
+    mysqli_query($link, "INSERT INTO CLIENTE VALUES (null, '$NDocumento', $TDocumento, '$nombre', '$apellido', '$direccion', '$telefono', 'Activo', 1)") or die ("<h2>Error 3</h2>");
 
 echo'<h2>hecho</h2>';
 

@@ -4,6 +4,7 @@ body{
     background-size: cover;
     background-attachment: fixed;
     margin: 0px;
+    margin-bottom: 100px;
 } 
 
 h1 {
@@ -72,4 +73,10 @@ input{
 }
 #menu > li:hover{
     background-color:rgb(138, 145, 151);
+}
+
+
+#Document{
+    height: 800px;
+    width: 80%;
 }

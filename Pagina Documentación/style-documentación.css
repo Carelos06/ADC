@@ -5,6 +5,9 @@ body{
     background-attachment: fixed;
     margin: 0%;
     margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% auto;
 } 
 
 h1 {
@@ -12,23 +15,25 @@ h1 {
     font-family:sans-serif;
     color:rgb(121, 191, 253);
     margin-top: 100px;
+    align-self: center;
 }
 
 #Lista_Documentos{
-    width: 50%;
+    width: 90%;
     color: aliceblue;
     margin-top: 50px;
     font-family: verdana;
     float: left;
+    text-align:left;
 }
 
 #Problematica{
-    width: 50%;
+    width: 90%;
     color: aliceblue;
     margin-top: px;
     font-family: verdana;
     float:right;
-    text-align:left;
+    text-align:center;
 }
 
 h2{
@@ -95,9 +100,4 @@ h2{
 }
 #menu > li:hover{
     background-color:rgb(138, 145, 151);
-}
-
-#Document{
-    height: 800px;
-    width: 700px;
 }

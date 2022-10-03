@@ -4,7 +4,10 @@ body{
     background-size: cover;
     background-attachment: fixed;
     margin: 0%;
-}  
+    margin-bottom: 100px;
+    display: grid;
+} 
+
 
 #div1 {
     background-color: rgb(35, 92, 167);

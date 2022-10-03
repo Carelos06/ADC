@@ -3,7 +3,9 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    margin:0%
+    margin: 0%;
+    margin-bottom: 100px;
+    display: grid;
 } 
 
 #div1 {

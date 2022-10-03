@@ -96,3 +96,8 @@ h2{
 #menu > li:hover{
     background-color:rgb(138, 145, 151);
 }
+
+#Document{
+    height: 800px;
+    width: 700px;
+}

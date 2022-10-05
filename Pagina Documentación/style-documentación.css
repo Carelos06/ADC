@@ -7,15 +7,20 @@ body{
     margin-bottom: 100px;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 10% auto;
+    grid-template-rows: 5% auto auto;
+    grid-template-areas: 
+    "B B"
+    "T T"
+    "LD P"
+    ;
 } 
 
 h1 {
     text-align: center;
     font-family:sans-serif;
     color:rgb(121, 191, 253);
-    margin-top: 100px;
     align-self: center;
+    grid-area: T;
 }
 
 #Lista_Documentos{
@@ -25,6 +30,7 @@ h1 {
     font-family: verdana;
     float: left;
     text-align:left;
+    grid-area: LD;
 }
 
 #Problematica{
@@ -34,6 +40,7 @@ h1 {
     font-family: verdana;
     float:right;
     text-align:center;
+    grid-area: P;
 }
 
 h2{
@@ -82,6 +89,7 @@ h2{
     background-color: aliceblue;
     position: fixed;
     margin: 0%;
+    grid-area: B;
 }
 
 #menu{

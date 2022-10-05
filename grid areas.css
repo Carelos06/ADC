@@ -1,0 +1,39 @@
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+    
+    "CA CA CA CA"
+    "W1 MA MA BL"
+    "W2 MA MA BL"
+    "FO FO FO FO"
+    ;
+}
+.cabacera{
+    grid-area: CA;
+}
+.principal{
+    grid-area: MA;
+    background-color: aliceblue;
+    font-size: 30px;
+}
+.pie-de-pagina{
+    grid-area: FO;
+    background-color: blue;
+}
+.barra-lateral{
+    grid-area: BL;
+    background-color: brown;
+}
+
+.widget-1{
+    grid-area: W1;
+    background-color: yellow;
+}
+
+.widget-2{
+    grid-area: W2;
+    background-color: red;
+}

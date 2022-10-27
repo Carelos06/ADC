@@ -56,6 +56,7 @@ input{
     background-color: aliceblue;
     position: fixed;
     margin: 0%;
+    grid-area: B;
 }
 
 #menu{
@@ -75,7 +76,6 @@ input{
 #menu > li:hover{
     background-color:rgb(138, 145, 151);
 }
-
 
 #Document{
     height: 800px;

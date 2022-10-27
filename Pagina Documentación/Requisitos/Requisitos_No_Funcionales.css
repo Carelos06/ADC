@@ -41,6 +41,7 @@ input{
     margin: 10px;
 }
 
+
 #logo{
     height: 60px;
     margin-top: 0%;
@@ -57,6 +58,7 @@ input{
     background-color: aliceblue;
     position: fixed;
     margin: 0%;
+    grid-area: B;
 }
 
 #menu{

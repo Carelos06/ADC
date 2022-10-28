@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casos De Uso</title>
+    <link rel="stylesheet" href="casos-de-uso.css">
+</head>
+<body>
+    <header>
+        <nav id="espacio_logo">
+            <ul id="menu">
+    
+                <li>
+                    <a href="main_page.html"><input type="image" src="assets/img/logo_real-removebg-preview.png" id="logo"></a>
+                </li>
+    
+                <li id="papa">
+                    <a href="Documentación.html">Documentación</a>
+                </li>
+                <li id="papa">
+                    <a href="agendar_cita.html">Agenda tu cita ahora</a>
+                </li>
+                <li id="papa">
+                    <a href="Creacion_cuenta.html">Crear cuenta</a>
+                </li>
+                
+                <li id="papa">
+                    <a href="index.html">Iniciar sesión</a>
+                </li>
+            </ul>
+       
+        </nav>
+    </header>
+    <br>
+
+
+    <h1>Requisitos Funcionales</h1>
+<center>
+    <table border="solid" id="Table1">
+                    <thead id="thead1">
+                        <tr>
+                        <th colspan="4" id="th1">1. IDENTIFICACIÓN DE CASO DE USO</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <tbody>    
+                            <td id="Td5">1.1 Id Caso</td>
+                            <td id="Td2">RQF003</td>
+                            <td id="Td5">1.2 Nombre</td>
+                            <td colspan="4" id="Td2">Gestión de empleados</td>
+                        </tr>
+                        <tr>
+                            <th colspan="4" id="th1">2. HISTORICO DE CASO DE USO</th>
+                        </tr>
+                        <tr>
+                            <td id="Td5" colspan="2">2.1 Autor</td>
+                            <td id="Td2" colspan="2">Carlos Andrés, Felipe Camargo</td>
+                        </tr>
+                        <tr>
+                            <td id="Td5">2.2 Fecha Creación</td>
+                            <td id="Td2">28/09/2022</td>
+                            <td id="Td5">2.3 Última Actualización</td>
+                            <td id="Td2">28/09/2022</td>
+                        </tr>
+                        <tr>
+                            <td id="Td5">2.4 Actualizado por</td>
+                            <td id="Td2">Carlos Andrés, Felipe Camargo</td>
+                            <td id="Td5">2.5 Version</td>
+                            <td id="Td2">1.0</td>
+                        </tr>
+                        <tr>
+                            <th colspan="4" id="th1">3. DEFINICIÓN DE UN CASO DE USO</th>
+                        </tr>
+                        <tr>
+                            <td colspan="4" id="Td5"><b> 3.1 Descripción</b></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" id="Td2">El sistema debe permitir a un usuario Administrador/Empleado registrar, ver y modificar sus propios datos de perfil. Un usuario Administrador/Empleado puede darse de baja (inactivar su rol de empleado), para activarse nuevamente debe solicitar al administrador directamente. El Administrador puede registrar, modificar los datos de los empleados, ver listado de los registros en estado activo, un listado de los registros en estado inactivo. Puede consultar un registro individual por número de documento o apellido del empleado y activar o inactivar un empleado según sea necesario.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" id="Td5"><b>3.2 ACTORES</b></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" id="Td2">administrador/empleado</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" id="Td5"><b>3.3 PRECONDICIONES</b></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" id="Td2">El usuario debe estar autenticado en el sistema</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" id="Td5"><b> 3.4 FLUJO NORMAL</b></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" id="Td2">Contando con las precondiciones el flujo normal será el siguiente:</td>
+                        </tr>
+                        <tr>
+                            <td id="Td5"><b>Paso</b></td>
+                            <td id="Td5"><b>Actor</b></td>
+                            <td id="Td5" colspan="2"><b>Sistema</b></td>
+                        </tr>
+                        <tr>
+                            <td id="Td4">1</td>
+                            <td id="Td2">iniciar sesión</td>
+                            <td id="Td2" colspan="2" >El sistema confirmara la identidad por medio de la base de datos</td>
+                        </tr>
+                        <tr>
+                            <td id="Td4">2</td>
+                            <td id="Td2">Entrar en el apartado asignado para el control de los empleados </td>
+                            <td colspan="2" id="Td2">El sistema proporcionara un lugar donde estén todos los empleados de la empresa</td>
+                        </tr>
+                        <tr>
+                            <td id="Td4">3</td>
+                            <td id="Td2">El actor genera una petición de un informe sobre los empleados que estén activos en la empresa asta ese momento</td>
+                            <td id="Td2" colspan="2" >El sistema recibe la petición analizando cuales son los empleados activos en esa fecha generando el informe solicitado</td>
+                        </tr>
+                        <tr>
+                            <td id="Td4">4</td>
+                            <td id="Td2" >Se recibe el informe para luego hacer algún cambio necesario y al final cerrar la sesión </td>
+                            <td id="Td2" colspan="2">El sistema guarda los cambios hechos por el actor y cierra el acceso desde esa cuenta hasta ser nuevamente abierta</td>
+                        </tr>
+                        <tr>
+                            <td id="Td4"></td>
+                            <td id="Td2"></td>
+                            <td id="Td2" colspan="2"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" id="Td5"><b>3.5 FLUJO ALTERNATIVO</b></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" id="Td2">Si existe otra forma de acceder al caso de uso, describir pasos.</td>
+                        </tr>
+                        <tr>
+                            <td id="Td5"><b>Paso</b></td>
+                            <td id="Td5"><b>Actor</b></td>
+                            <td id="Td5" colspan="2"><b>Sistema</b></td>
+                        </tr>
+    <table border="solid" id="Table1">
+                    <thead id="thead1">
+                        <tr>
+                        <th colspan="4" id="th1">1. IDENTIFICACIÓN DE CASO DE USO</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <tbody>    
+                            <td id="Td5">1.1 Id Caso</td>
+                            <td id="Td2">CU 002</td>
+                            <td id="Td5">1.2 Nombre</td>
+                            <td colspan="4" id="Td2">Gestionar Usuarios (Registrar Usuario)</td>
+                        </tr>
+                        <tr>
+                            <th colspan="4" id="th1">2. HISTORICO DE CASO DE USO</th>
+                        </tr>
+                        <tr>
+                            <td id="Td5" colspan="2">2.1 Autor</td>
+                            <td id="Td2" colspan="2">Juan Pérez (aprendiz)</td>
+                        </tr>
+                        <tr>
+                            <td id="Td5">2.2 Fecha Creación</td>
+                            <td id="Td2">30/03/2022</td>
+                            <td id="Td5">2.3 Última Actualización</td>
+                            <td id="Td2">30/03/2022</td>
+                        </tr>
+                        <tr>
+                            <td id="Td5">2.4 Actualizado por</td>
+                            <td id="Td2">Juan Pérez</td>
+                            <td id="Td5">2.5 Version</td>
+                            <td id="Td2">1.0</td>
+                        </tr>
+                        <tr>
+                            <th colspan="4" id="th1">3. DEFINICIÓN DE UN CASO DE USO</th>
+                        </tr>
+                        <tr>
+                            <td colspan="4" id="Td5"><b> 3.1 Descripción</b></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" id="Td2">Permite el registro de información de un nuevo usuario</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" id="Td5"><b>3.2 ACTORES</b></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" id="Td2">Administrador</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" id="Td5"><b>3.3 PRECONDICIONES</b></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" id="Td2">El usuario debe haber iniciado sesión en el sistema cu001</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" id="Td5"><b> 3.4 FLUJO NORMAL</b></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" id="Td2">Contando con las precondiciones el flujo normal será el siguiente:</td>
+                        </tr>
+                        <tr>
+                            <td id="Td5"><b>Paso</b></td>
+                            <td id="Td5"><b>Actor</b></td>
+                            <td id="Td5" colspan="2"><b>Sistema</b></td>
+                        </tr>
+                        <tr>
+                            <td id="Td4">1</td>
+                            <td id="Td2">Da click en el menú Gestionar Usuarios</td>
+                            <td id="Td2" colspan="2" >Muestras las opciones Registrar, consultar, modificar, inactivar Usuarios </td>
+                        </tr>
+                        <tr>
+                            <td id="Td4">2</td>
+                            <td id="Td2">Da click a la opción registrar usuario</td>
+                            <td colspan="2" id="Td2">Muestra un formulario con los campos para registrar el usuario</td>
+                        </tr>
+                        <tr>
+                            <td id="Td4">3</td>
+                            <td id="Td2">Diligencia los datos que solicita el formulario para registrar al usuario y da click en el botón "Registrar Usuario"</td>
+                            <td id="Td2" colspan="2" >Valida los datos registrados y muestra el mensaje "Usuario Registrado Correctamente"</td>
+                        </tr>
+                        <tr>
+                            <td id="Td4"></td>
+                            <td id="Td2" ></td>
+                            <td id="Td2" colspan="2"></td>
+                        </tr>
+                        <tr>
+                            <td id="Td4"></td>
+                            <td id="Td2"></td>
+                            <td id="Td2" colspan="2"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" id="Td5"><b>3.5 FLUJO ALTERNATIVO</b></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" id="Td2">Si existe otra forma de acceder al caso de uso, describir pasos.</td>
+                        </tr>
+                        <tr>
+                            <td id="Td5"><b>Paso</b></td>
+                            <td id="Td5"><b>Actor</b></td>
+                            <td id="Td5" colspan="2"><b>Sistema</b></td>
+                        </tr>
+                        <tr>
+                            <td id="Td4"></td>
+                            <td id="Td2"></td>
+                            <td id="Td2" colspan="2"></td>
+                        </tr>
+                        <tr>
+                            <td id="Td4"></td>
+                            <td id="Td2"></td>
+                            <td id="Td2" colspan="2"></td>
+                        </tr>
+                        <tr>
+                            <td id="Td5" colspan="4"><b>3.6 FLUJO EXCEPCIONAL</b></td>
+                        </tr>
+                        <tr>
+                            <td id="Td2" colspan="4"></td>
+                        </tr>
+                        <tr>
+                            <td id="Td5"><b>Paso</b></td>
+                            <td id="Td5"><b>Actor</b></td>
+                            <td id="Td5" colspan="2"><b>Sistema</b></td>
+                        </tr>
+                        <tr>
+                            <td id="Td4"> 3a</td>
+                            <td id="Td2">Diligencia los datos que solicita el formulario para registrar al usuario y da click en el botón "Registrar Usuario"</td>
+                            <td id="Td2" colspan="2">Valida los datos ingresados y si son incorrectos muestra el mensaje "Datos incorrectos o inconsistentes, verifique y reintente"</td>
+                        </tr>
+                        <tr>   
+                            <td id="Td4"></td>
+                            <td id="Td2"></td>
+                            <td id="Td2" colspan="2"></td>
+                        </tr>
+                        <tr>
+                            <td id="Td5" colspan="4"><b>3.7 POS CONDICIONES</b></td>
+                        </tr>
+                        <tr>
+                            <td id="Td2" colspan="4">Sistema genera confirmación de usuario registrado con éxito</td>
+                        </tr>
+                        <tr>
+                            <td id="Td5" colspan="4"><b>3.8 FRECUENCIA</b></td>
+                        </tr>
+                        <tr>
+                            <td id="Td2" colspan="4">Alta</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </center>
+</body>
+</html>
